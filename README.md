@@ -2,7 +2,7 @@
 
 Creating a UIScrollView using Autolayout (programmatically) with auto-height.
 
-<img src='https://im4.ezgif.com/tmp/ezgif-4-4160cb9241d8.gif' width='100%' alt='Creating a UIScrollView using Autolayout (programmatically) with auto-height.'>
+<img src='https://im4.ezgif.com/tmp/ezgif-4-9929cba67f29.gif' width='100%' alt='Creating a UIScrollView using Autolayout (programmatically) with auto-height.'>
 
 ## Features
 
