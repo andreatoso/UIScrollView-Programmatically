@@ -2,8 +2,6 @@
 
 Creating a UIScrollView using Autolayout (programmatically) with auto-height.
 
-<img src='/preview.gif?raw=true' width='100%' alt='Creating a UIScrollView using Autolayout (programmatically) with auto-height.'>
-
 ## Features
 
 * Programmatically (no storyboard / nib)
@@ -12,6 +10,10 @@ Creating a UIScrollView using Autolayout (programmatically) with auto-height.
 * ContentView inside UIScrollView
 * Dynamic height
 * Handles rotation
+
+## Preview
+
+<img src='/preview.gif?raw=true' width='50%' alt='Creating a UIScrollView using Autolayout (programmatically) with auto-height.'>
 
 ## License
 
