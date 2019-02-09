@@ -1,15 +1,15 @@
 //
 //  ViewController.swift
-//  AutoLayScroll
+//  UIScrollView Programmatically
 //
-//  Created by Michel Bouchet on 19/08/2016.
-//  Copyright © 2016 Michel Bouchet. All rights reserved.
+//  Created by Andrea Toso on 09/02/2019.
+//  Copyright © 2019 Andrea Toso. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-    
+
     let scrollView = UIScrollView()
     let contentView = UIView()
     
@@ -24,16 +24,14 @@ class ViewController: UIViewController {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         contentView.translatesAutoresizingMaskIntoConstraints = false
         
-        self.view.addSubview(scrollView)
+        view.addSubview(scrollView)
         scrollView.addSubview(contentView)
         
-        //x,w,t,b
         scrollView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         scrollView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
-        //x,w,t,b
         contentView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
         contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
         contentView.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
@@ -42,14 +40,13 @@ class ViewController: UIViewController {
     
     func setupViews(){
         contentView.addSubview(label1)
-        contentView.addSubview(label2)
         label1.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
         label1.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
         label1.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 3/4).isActive = true
-        label1.bottomAnchor.constraint(equalTo: label2.topAnchor).isActive = true
         
+        contentView.addSubview(label2)
         label2.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
-        label2.topAnchor.constraint(equalTo: label1.bottomAnchor).isActive = true
+        label2.topAnchor.constraint(equalTo: label1.bottomAnchor, constant: 25).isActive = true
         label2.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 3/4).isActive = true
         label2.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
     }
@@ -73,6 +70,6 @@ class ViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
+
 }
 
